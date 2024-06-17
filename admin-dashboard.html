@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html>
+    <head lang="en">
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Admin Dashboard</title>
+        <link href='https://fonts.googleapis.com/css?family=Montserrat' rel='stylesheet'>
+        <link rel="stylesheet" href="stylesheet.css">
+    </head>
+    <body>
+        <script src="script.js"></script>
+
+        <!-- top navigation bar -->
+        <div class="topnav">
+            <div class="logo"><img src="images/logo2.jpg" style="width:60px;height:40px;"></div>
+            <div class="search">
+                <form>
+                    <input type="text" placeholder="Search here">
+                    <button class="searchBtn">Search</button>
+                    <button class="inboxBtn">Inbox</button>
+                </form>
+            </div>
+            <div class="profile"><img src="images/profileImg.jpg"></div>
+        </div>
+
+        <!-- side navigation bar -->
+        <div class="sidebar">
+            <button class="navIcon" onclick="show()">
+                <div id="bar1" class="bar"></div>                
+                <div id="bar2" class="bar"></div>
+                <div id="bar3" class="bar"></div>
+            </button>
+            <nav>
+                <ul>
+                    <li><a>Home</a></li>
+                    <li><a>Manage Students</a></li>
+                    <li><a>Manage Announcements</a></li>
+                    <li><a>Manage FAQ</a></li>
+                </ul>
+            </nav>
+        </div>
+
+        <!-- Display dashboard user role-->
+        <div class="user-role">
+            <h2>Welcome to Admin Dashboard</h2>
+        </div>
+        
+        <!-- main content-->
+         <div class="content">
+            <div class="card">
+                <div class="card-header">
+                    <img src="images/student-card.jpg">
+                </div>
+                <div class="card-body">
+                    <h3>Manage Students</h3>
+                    <p>To view, update and remove students within the system.</p>
+                    <button class="manageBtn" style="vertical-align:middle"><span>Manage</span>
+                </div>
+            </div>
+
+            <div class="card">
+                <div class="card-header">
+                    <img src="images/announcement-card.jpg">
+                </div>
+                <div class="card-body">
+                    <h3>Manage Announcements</h3>
+                    <p>To view, update and remove announcements made within the system.</p>
+                    <button class="manageBtn" style="vertical-align:middle"><span>Manage</span>
+                </div>
+            </div>
+
+            <div class="card">
+                <div class="card-header">
+                    <img src="images/faq-card.jpg">
+                </div>
+                <div class="card-body">
+                    <h3>Manage FAQs</h3>
+                    <p>To view, update and remove faqs and feedbacks within the system.</p>
+                    <button class="manageBtn" style="vertical-align:middle"><span>Manage</span>
+                </div>
+            </div>
+
+            <div class="card">
+                <div class="card-header">
+                    <img src="images/feedback-card.jpg">
+                </div>
+                <div class="card-body">
+                    <h3>View Feedback</h3>
+                    <p>To view feedbacks made within the system.</p>
+                    <button class="manageBtn" style="vertical-align:middle"><span>Manage</span>
+                </div>
+            </div>
+         </div>
+    </body>
+</html>
